@@ -2,7 +2,7 @@ import { useState, useCallback } from "react"
 import axios from "axios"
 
 const PRESET_AMOUNTS = [500, 1000, 2500, 5000, 10000, 25000]
-const API_BASE = "/api/payment"
+const API_BASE = "https://ngo-backend-tx39.onrender.com/api/payment"
 
 export default function DonateForm() {
   const [form, setForm] = useState({
