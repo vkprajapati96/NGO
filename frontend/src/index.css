@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    
+  }
+  body {
+    font-family: "DM Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    /* background-color: rgb(8,74,60); */
+    /* background: white; */
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
