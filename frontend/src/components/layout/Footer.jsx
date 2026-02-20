@@ -10,10 +10,9 @@ const Footer = () => {
           {/* Logo & About */}
           <div>
             <h3 className='text-2xl font-bold mb-3'>MyHeart</h3>
-            <p className='text-emerald-100 text-sm leading-relaxed'>
-              Transforming lives through education, healthcare, and community support.
-            </p>
-          </div>
+<p className='text-emerald-100 text-sm leading-relaxed'>
+  Empowering underprivileged communities through nutritious meals, food security, healthcare support, and sustainable development programs that create lasting positive change in their lives.
+</p> </div>
 
           {/* Quick Links */}
           <div>
