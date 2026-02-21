@@ -3,6 +3,8 @@ import hero from "../../src/image/hero.jpeg"
 import { Link } from 'react-router-dom' 
 import { BookOpen, Heart, Users } from 'lucide-react'
 import ConsultationForm from '../components/Consultationform'
+
+
 import education from "../../src/image/education.jpeg"
 import classroom from "../../src/image/classroom.jpeg"
 import volunteer from "../../src/image/volunteer.jpeg"
@@ -119,6 +121,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+
 {/* short about */}
     <div className='max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16'>
       <div className='grid md:grid-cols-2 gap-12 items-center'>
@@ -223,6 +226,7 @@ const Home = () => {
       </div>
     </div>
     {/* gallery */}
+    
     <div className='bg-gray-50 py-12 md:py-16'>
       <div className='max-w-7xl mx-auto px-4 md:px-6'>
         {/* Header */}
