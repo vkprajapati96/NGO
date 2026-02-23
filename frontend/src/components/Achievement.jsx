@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { BookOpen, UtensilsCrossed, Stethoscope, Users } from 'lucide-react'
+import { UtensilsCrossed, Package, Users, HandshakeIcon } from 'lucide-react'
 
 const Counter = ({ target, duration = 2000, isVisible }) => {
   const [count, setCount] = useState(0)
@@ -49,10 +49,10 @@ export default function Achievement() {
   }, [])
 
   const achievements = [
-    { icon: <BookOpen size={48} />, title: "5000", description: "Children Educated", target: 5000 },
     { icon: <UtensilsCrossed size={48} />, title: "50000", description: "Meals Distributed", target: 50000 },
-    { icon: <Stethoscope size={48} />, title: "1000", description: "Medical Camps", target: 1000 },
-    { icon: <Users size={48} />, title: "500", description: "Active Volunteers", target: 500 }
+    { icon: <Package size={48} />, title: "5000", description: "Ration Kits Provided", target: 5000 },
+    { icon: <Users size={48} />, title: "1200", description: "Community Feeding Drives", target: 1200 },
+    { icon: <HandshakeIcon size={48} />, title: "500", description: "Active Volunteers", target: 500 }
   ]
 
   return (

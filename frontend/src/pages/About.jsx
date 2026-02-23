@@ -68,14 +68,18 @@ const About = () => {
   return (
     <>
     {/* about */}
-<div  className='px-4'>
-  <div className='max-w-7xl mx-auto  py-12 md:py-20 mt-2 md:mt-4 rounded-lg' style={{ backgroundColor: '#074a3c' }}>
+
+<div className='px-4'>
+  <div className='max-w-7xl mx-auto py-12 md:py-20 mt-2 md:mt-4 rounded-lg' style={{ backgroundColor: '#074a3c' }}>
     <div className='text-center mb-12'>
       <h1 className='text-4xl md:text-6xl font-bold mb-6 text-white'>
         About MyHeart Foundation
       </h1>
-      <p className='text-lg md:text-xl text-emerald-100 max-w-3xl mx-auto'>
-        Empowering underprivileged communities through education, healthcare, and sustainable development
+      <p className='text-lg md:text-xl font-bold text-emerald-300 mb-4'>
+        Fighting Hunger. Feeding Hope.
+      </p>
+      <p className='text-base md:text-lg text-emerald-100 max-w-3xl mx-auto leading-relaxed'>
+        We provide nutritious meals to underprivileged children, families, and elderly individuals. Food is a basic human right.
       </p>
     </div>
   </div>
