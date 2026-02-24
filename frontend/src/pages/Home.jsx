@@ -67,40 +67,40 @@ const galleryImages = [
 const Home = () => {
   return (
     <>
-        <div className="max-w-7xl mx-auto px-4 rounded-lg overflow-hidden relative mt-2 md:mt-4">
-        {/* Background Image Container */}
-        <div className="relative overflow-hidden rounded-lg h-96 md:h-[500px] lg:h-[600px]">
-          <img
-            src={hero}
-            alt="Hero Image"
-            className="w-full h-full object-cover"
-          />
+<div className="max-w-7xl mx-auto px-4 rounded-lg overflow-hidden relative mt-2 md:mt-4">
+  {/* Background Image Container */}
+  <div className="relative overflow-hidden rounded-lg h-96 md:h-[500px] lg:h-[600px]">
+    <img
+      src={hero}
+      alt="Hero Image"
+      className="w-full h-full object-cover"
+    />
 
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+    {/* Dark Overlay */}
+    <div className="absolute inset-0 bg-black opacity-40"></div>
 
-          {/* Text Content - Absolute */}
-          <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12">
-            <div className="w-full md:w-1/2">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3 md:mb-4">
-                Small Help. Big Impact.
-              </h1>
-              <p className="text-sm sm:text-base md:text-lg text-white font-light mb-4 md:mb-6 leading-relaxed">
-                A single meal can bring hope to someone in need. We provide
-                fresh food to hungry children and families. Your small support
-                can make a big difference.
-              </p>
+    {/* Text Content - Absolute */}
+    <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12">
+      <div className="w-full md:w-1/2 md:pl-12">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3 md:mb-4">
+          Small Help. Big Impact.
+        </h1>
+        <p className="text-sm sm:text-base md:text-lg text-white font-light mb-4 md:mb-6 leading-relaxed">
+          A single meal can bring hope to someone in need. We provide
+          fresh food to hungry children and families. Your small support
+          can make a big difference.
+        </p>
 
-              <Link
-                to="/donate"
-                className="inline-block bg-green-500 text-white px-3 sm:px-5 md:px-8 py-2 sm:py-3 md:py-4 rounded-md font-bold hover:bg-green-600 transition duration-300 hover:shadow-lg transform hover:scale-105 text-sm sm:text-base"
-              >
-                Donate Now
-              </Link>
-            </div>
-          </div>
-        </div>
+        <Link
+          to="/donate"
+          className="inline-block bg-green-500 text-white px-3 sm:px-5 md:px-8 py-2 sm:py-3 md:py-4 rounded-md font-bold hover:bg-green-600 transition duration-300 hover:shadow-lg transform hover:scale-105 text-sm sm:text-base"
+        >
+          Donate Now
+        </Link>
       </div>
+    </div>
+  </div>
+</div>
 
       {/* short about */}
 <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16">
