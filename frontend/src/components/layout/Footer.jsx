@@ -63,8 +63,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <div className="space-y-2 text-emerald-100 text-sm">
-              <p> 123 Charity Lane, Delhi</p>
-              <p> +91 98765 43210</p>
+              <p> MyHeart Foundation, Noida</p>
+              <p> +91 987655XXXX</p>
               <p> info@ngo.org</p>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="#"      
                 className="bg-emerald-600 hover:bg-emerald-700 p-3 rounded-lg transition"
               >
                 <Facebook size={20} />

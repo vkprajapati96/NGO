@@ -6,10 +6,12 @@ import Footer from "./components/layout/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import ScrollTop from "./components/ScrollTop";
 
 export default function App() {
   return (
     <>
+    <ScrollTop/>
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />

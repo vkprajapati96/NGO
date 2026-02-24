@@ -6,40 +6,37 @@ import { UtensilsCrossed,  Package } from 'lucide-react'
 
 import ConsultationForm from "../components/Consultationform";
 
-import education from "../../src/image/education.jpeg";
 import classroom from "../../src/image/classroom.jpeg";
 import volunteer from "../../src/image/volunteer.jpeg";
-import team from "../../src/image/team.jpeg";
-import health from "../../src/image/health.jpeg";
 import food from "../../src/image/food.jpeg";
 import whoarewe from "../../src/image/whoAreWe.jpeg";
 
 import food1 from "../../src/image/food1.jpeg";
+import streetfeeding from "../../src/image/streetfeeding.jpeg";
+import ration from "../../src/image/ration.jpeg";
 
-import health1 from "../../src/image/health1.jpeg";
 
-import education1 from "../../src/image/education1.jpeg";
 
 const programs = [
   {
     id: 1,
     title: "Daily Food Distribution",
     description: "We prepare and distribute fresh, hygienic meals to underprivileged children, families, and homeless individuals. Our daily drives ensure no one in our community sleeps hungry.",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=300&fit=crop",
+    image: food1,
     icon: UtensilsCrossed
   },
   {
     id: 2,
     title: "Street Feeding Drive",
     description: "Regular food distribution for homeless individuals living on streets and shelters.",
-    image: "https://images.unsplash.com/photo-1532996122724-8f3c66e9c869?w=400&h=300&fit=crop",
+    image: streetfeeding,
     icon: Users
   },
   {
     id: 3,
     title: "Ration Distribution",
     description: "We provide monthly ration kits including rice, pulses, oil, and basic necessities to families in need.",
-    image: "https://images.unsplash.com/photo-1559027615-cd2628902d4a?w=400&h=300&fit=crop",
+    image: ration,
     icon: Package
   }
 ]
@@ -148,6 +145,51 @@ const Home = () => {
     </div>
   </div>
 </div>
+
+     
+      {/* our work */}
+<div className="bg-gray-50 py-12 md:py-16">
+  <div className="max-w-7xl mx-auto px-4 md:px-6">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#074a3c" }}>
+        Our Programs
+      </h2>
+      <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        We run focused initiatives to fight hunger and provide nutritious meals to those in need.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-8">
+      {programs.map((program) => {
+        const IconComponent = program.icon
+        return (
+          <div key={program.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:scale-105 flex flex-col">
+            <img src={program.image} alt={program.title} className="w-full h-64 object-cover" />
+            
+            <div className="p-6 flex flex-col flex-grow">
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#f0f9f7", color: "#074a3c" }}>
+                <IconComponent size={24} />
+              </div>
+              
+              <h3 className="text-xl font-bold mb-3" style={{ color: "#074a3c" }}>
+                {program.title}
+              </h3>
+              
+              <p className="text-gray-600 leading-relaxed mb-6">
+                {program.description}
+              </p>
+              
+              <Link to="/donate" className="w-full block text-center px-4 py-2 rounded-lg font-bold text-white transition duration-300 hover:shadow-lg transform hover:scale-105 mt-auto" style={{ backgroundColor: "#084a3c" }} onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#0a5e4f")} onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#084a3c")}>
+                Donate
+              </Link>
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  </div>
+</div>
+
       {/* how we help */}
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16">
@@ -281,49 +323,6 @@ const Home = () => {
   </div>
 </div>
 
-     
-      {/* our work */}
-<div className="bg-gray-50 py-12 md:py-16">
-  <div className="max-w-7xl mx-auto px-4 md:px-6">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#074a3c" }}>
-        Our Programs
-      </h2>
-      <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-        We run focused initiatives to fight hunger and provide nutritious meals to those in need.
-      </p>
-    </div>
-
-    <div className="grid md:grid-cols-3 gap-8">
-      {programs.map((program) => {
-        const IconComponent = program.icon
-        return (
-          <div key={program.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:scale-105 flex flex-col">
-            <img src={program.image} alt={program.title} className="w-full h-64 object-cover" />
-            
-            <div className="p-6 flex flex-col flex-grow">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#f0f9f7", color: "#074a3c" }}>
-                <IconComponent size={24} />
-              </div>
-              
-              <h3 className="text-xl font-bold mb-3" style={{ color: "#074a3c" }}>
-                {program.title}
-              </h3>
-              
-              <p className="text-gray-600 leading-relaxed mb-6">
-                {program.description}
-              </p>
-              
-              <Link to="/donate" className="w-full block text-center px-4 py-2 rounded-lg font-bold text-white transition duration-300 hover:shadow-lg transform hover:scale-105 mt-auto" style={{ backgroundColor: "#084a3c" }} onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#0a5e4f")} onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#084a3c")}>
-                Donate
-              </Link>
-            </div>
-          </div>
-        )
-      })}
-    </div>
-  </div>
-</div>
       {/* gallery */}
 
       <div className="bg-gray-50 py-12 md:py-16">

@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
               </p>
               <div className='mt-3 ml-4'>
                 <p><strong>Email:</strong> info@ngo.org</p>
-                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Phone:</strong> +91 98765 4XXXX</p>
                 <p><strong>Address:</strong> 123 Charity Lane, Delhi</p>
               </div>
             </section>
