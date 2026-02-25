@@ -81,7 +81,7 @@ const Home = () => {
 
     {/* Text Content - Absolute */}
     <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12">
-      <div className="w-full md:w-1/2 md:pl-12">
+      <div className="w-full md:w-1/2">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3 md:mb-4">
           Small Help. Big Impact.
         </h1>
